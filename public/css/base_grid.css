@@ -1,0 +1,75 @@
+body{
+  background-color: black;/*배경*/
+}
+.grid{
+  display:grid;
+  grid-template-column:repeat(3,1fr);
+  grid-template-rows:repeat(4,110px);
+  grid-row-gap:98px;
+  color:white;
+  font-family: "Avant Garde"
+}
+.second_grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,110px);
+  grid-row-gap:30px;
+  color:white;
+  font-family:"Avant Garde"
+}
+#left-top{ /*날짜 & 시간*/
+  grid-column:1/2;
+  grid-row:1/4;
+  text-align:left;
+}
+#center-top{ /*제목&명령*/
+  grid-column:2/3;
+  grid-row:1/4;
+  text-align:center;
+  margin:30px;
+}
+#title{ /*제목*/
+  font-size:70px;
+  font-style:italic;
+}
+#call{ /*명령 : 진단 시작이라고 ...*/
+  font-size:13px;
+  font-style:normal;
+}
+#right-top{ /*날씨 & 미세먼지*/
+  grid-column:3/4;
+  grid-row:1/4;
+  text-align:right;
+}
+#bottom{ /*명언*/
+  grid-column:1/4;
+  grid-row:4/5;
+  font-family: "Gadget";
+  font-size: 25px;
+}
+.startingbutton{
+  background-color:grey;
+  border:none;
+  color:black;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+.checkboxes{
+  text-align: left;
+  margin-left: 450px;
+}
+#choiceSubmit{
+  background-color: gray;
+  border:none;
+  color:black;
+  padding:10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size:16px;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+}

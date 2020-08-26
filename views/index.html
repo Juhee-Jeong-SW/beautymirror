@@ -1,0 +1,62 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BeautyMirror</title>
+    <link rel="stylesheet" href="/css/base_grid.css">
+    <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/dateNclock.css">
+  </head>
+  <body>
+    <div class="grid">
+      <div id="left-top">
+          <div id="date"></div>
+          <div id="clock"></div>
+      </div>
+      <div id="center-top">
+        <div id="title">Beauty Mirror</div>
+        <div id="call">
+          <br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br>
+              <input type="button" class="startingbutton" value="start" onclick="location.href='printcolors'"/>
+        </div>
+      </div>
+
+      <div id="bottom">
+        "Feeling beautiful has nothing to do with what you look like. I promise."
+        <div id="bottom_quotes'name"
+        style="font-size:20px; font-style: italic; margin-left:660px;margin-top:10px;">
+          -Emma Watson
+        </div>
+      </div>
+
+      <div id="right-top">
+        <div id="weather">
+          <h2>Today's weather</h2>
+          <div id="TempAndIcon"> <!-- 온도 & 날씨아이콘 -->
+            <div id="temp"></div>
+            <img src="" alt="" id="icon" width=70px>
+          </div>
+          <div id="description"></div> <!--날씨 설명-->
+        </div>
+        </div>
+      </div>
+      <script src="/script/weather.js" charset="utf-8"></script>
+      <script src="/script/calendar.js" charset="utf-8"></script>
+      <script src="/script/clock.js" charset="utf-8"></script>
+       <script type="text/javascript">
+        
+          /* function camStart(){
+            $.ajax({
+              url: "",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');;
+            });
+		 //  alert('hey');
+        }*/
+        
+
+      </script>
+  </body>
+</html>

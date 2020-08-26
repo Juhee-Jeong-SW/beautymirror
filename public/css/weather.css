@@ -1,0 +1,25 @@
+h2{
+  text-align: right;
+  margin:0;
+}
+#weather{
+  margin:10px;
+  margin-right: 20px;
+  margin-left: 97px;
+  margin-bottom: 40px;
+}
+#temp{
+  margin:0;
+  margin-left:15px;
+  font-size:50px;
+  font-weight: bold;
+  display: inline;
+}
+#description{
+  margin-right:15px;
+  text-align: right;
+  font-size:18px;
+}
+#TempAndIcon{
+  text-align: right;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>test slider</title>
+
+<link rel="stylesheet" type="text/css" href="/css/slider-pro.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/css/imageNumber.css">
+<link rel="stylesheet" type="text/css" href="/css/base_grid.css">
+<link rel="stylesheet" href="/css/dateNclock.css">
+</head>
+
+<body>
+	<div class="second_grid">
+		<h4 style="text-align:center;">색상을 스와이프하며 베스트컬러 3가지를 골라 체크해보세요!</h4>
+		<div id="left-top">
+			<div id="date"></div>
+			<div id="clock"></div>
+		</div>
+		<div id="right-top">
+			<div class="checkboxes">
+				<!--여기 톤 이름은 openCV결과 받아온 걸로 해줘야함.-->
+				<h3>*Pale Tone*</h3>
+				<form action="http://localhost:8000/new" method="get">
+					<!--체크박스에서 name이 같으면 배열로 변경됨. 접근시 어떻게 해야하는지 캡처 참조.-->
+					<input type="checkbox" name="bestColor" value="choice1">1<br>
+					<input type="checkbox" name="bestColor" value="choice2">2<br>
+					<input type="checkbox" name="bestColor" value="choice3">3<br>
+					<input type="checkbox" name="bestColor" value="choice4">4<br>
+					<input type="checkbox" name="bestColor" value="choice5">5<br>
+					<input type="checkbox" name="bestColor" value="choice6">6<br>
+					<input type="checkbox" name="bestColor" value="choice7">7<br>
+					<input type="checkbox" name="bestColor" value="choice8">8<br>
+					<input type="checkbox" name="bestColor" value="choice9">9<br>
+					<input type="checkbox" name="bestColor" value="choice10">10<br>
+					<input type="checkbox" name="bestColor" value="choice11">11<br>
+					<input type="checkbox" name="bestColor" value="choice12">12<br>
+					<br>
+					<!--3가지 선택한 후 '선택완료'버튼 누르면 배열에 체크된 값들 저장-->
+					<input type="submit" id="choiceSubmit" value="See Result">
+				</form>
+			</div>
+		</div>
+		<div id="bottom">
+		<div id="example2" class="slider-pro">
+			<div class="sp-slides">
+				<!--pale1-->
+						<div id=color1 class="sp-slide">
+							<br><br><p>1</p>
+								<!--<img class="sp-image" src="./css/blank.gif"
+									data-src="./colors/pale/pale1.png"/>-->
+						</div>
+
+				<!--pale2-->
+		    	<div id=color2 class="sp-slide" >
+						<br><br><p>2</p>
+					</div>
+
+				<!--pale3-->
+					<div id=color3 class="sp-slide" >
+						<br><br><p>3</p>
+					</div>
+
+				<!--pale4-->
+					<div id=color4 class="sp-slide" >
+						<br><br><p>4</p>
+					</div>
+
+				<!--pale5-->
+					<div id=color5 class="sp-slide">
+						<br><br><p>5</p>
+					</div>
+
+				<!--pale6-->
+					<div id=color6 class="sp-slide" >
+						<br><br><p>6</p>
+					</div>
+
+				<!--pale7-->
+					<div id=color7 class="sp-slide" >
+						<br><br><p>7</p>
+					</div>
+
+				<!--pale8-->
+					<div id=color8 class="sp-slide">
+						<br><br><p>8</p>
+					</div>
+
+				<!--pale9-->
+					<div id=color9 class="sp-slide" >
+						<br><br><p>9</p>
+					</div>
+
+				<!--pale10-->
+					<div id=color10 class="sp-slide">
+						<br><br><p>10</p>
+					</div>
+
+				<!--pale11-->
+	      	<div id=color11 class="sp-slide" >
+						<br><br><p>11</p>
+					</div>
+
+				<!--pale12-->
+	      	<div id=color12 class="sp-slide" >
+						<br><br><p>12</p>
+					</div>
+
+			</div>
+	  </div>
+		</div>
+		</div>
+	<script type="text/javascript" src="/jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="/jquery/jquery.sliderPro.min.js"></script>
+	<script type="text/javascript" src="/jquery/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function( $ ) {
+			$( '#example2' ).sliderPro({//id:example2 에 sliderPro적용한다.
+				width: '55%',
+				height: 500,
+				aspectRatio: 3.0, //이미지 크기(높이+너비 조절)
+				visibleSize: '100%',
+				forceSize: 'fullWidth'
+			});
+		});
+	</script>
+
+	<script src="/script/saveChoices.js" charset="utf-8"></script>
+	<script src="/script/checkbox.js" charset="utf-8"></script>
+	<script src="/script/sending_pale.js" charset="utf-8"></script>
+	<script src="/script/calendar.js" charset="utf-8"></script>
+	<script src="/script/clock.js" charset="utf-8"></script>
+</html>

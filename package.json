@@ -1,0 +1,22 @@
+{
+  "name": "beautymirror",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@lab.hanium.or.kr:19-p303/beautymirror.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "websocket": "^1.0.30"
+  },
+  "devDependencies": {},
+  "description": ""
+}
