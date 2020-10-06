@@ -36,3 +36,16 @@
   * 퍼스널 컬러 진단에 사용될 사진을 촬영한다. 라즈베리 파이 키트 내의 카메라 모듈을 사용하여 라즈베리파이 자체 내의 카메라 설정을 통해 이를 촬영하여 사진 이미지를 생성한다.
 - 터치 패널
   * 뷰티 미러 겉면에 사용자의 터치를 받을 수 있는 터치 패널을 부착하여 사용자로부터 터치를 받아 해당 영역에 대한 사용자의 명령을 수행하도록 한다.
+
+## 기능 설계도
+
+<img width="619" alt="스크린샷 2020-10-07 오전 8 15 41" src="https://user-images.githubusercontent.com/70262329/95269914-714d0180-0875-11eb-94da-9122221da8b5.png">
+
+## 대표 화면
+<img width="683" alt="스크린샷 2020-10-07 오전 8 15 25" src="https://user-images.githubusercontent.com/70262329/95269980-8c1f7600-0875-11eb-9d45-5e29eb042595.png">
+
+<img width="692" alt="스크린샷 2020-10-07 오전 8 15 17" src="https://user-images.githubusercontent.com/70262329/95269983-8de93980-0875-11eb-975a-38053b69ac41.png">
+
+<img width="645" alt="스크린샷 2020-10-07 오전 8 18 20" src="https://user-images.githubusercontent.com/70262329/95270047-ad806200-0875-11eb-8c65-c20ac46470e5.png">
+
+<img width="663" alt="스크린샷 2020-10-07 오전 8 19 05" src="https://user-images.githubusercontent.com/70262329/95270108-c9840380-0875-11eb-9ea7-78d93aea7fc8.png">
